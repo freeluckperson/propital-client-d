@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const api_base_url = import.meta.env.VITE_API_BASE_URL;
+//Revisa el problema en el deploy con la variable de entorno
+// const api_base_url = import.meta.env.VITE_API_BASE_URL;
+const api_base_url = "https://server-o25o.onrender.com";
 
 const Notifications = () => {
   const navigate = useNavigate();
